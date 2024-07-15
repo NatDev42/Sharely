@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- FrameLayout to stack the top box behind other elements -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <!-- Top box background -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/top_box" />
+
+                <!-- Content on top of the background -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:gravity="end">
+                        <ImageButton
+                            android:id="@+id/options_btn"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/dot3"
+                            android:elevation="10dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="-10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Welcome, "
+                            android:textSize="24sp"
+                            android:textColor="@android:color/white"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="User"
+                            android:textStyle="bold"
+                            android:textSize="24sp"
+                            android:textColor="@android:color/white"
+                            android:id="@+id/userNametxt"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOUR GROUPS"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"/>
+            <View
+                android:layout_width="210dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#000000" />
+            <GridLayout
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:rowCount="1"
+                android:columnCount="2"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:id="@+id/gridLayout">
+                <ListView
+                    android:layout_width="165dp"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:id="@+id/LvLeft"/>
+                <ListView
+                    android:layout_width="165dp"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:id="@+id/LvRight"/>
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/createOrJoinBtn"
+        android:backgroundTint="#2372b4"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:text="Add Group"/>
+</LinearLayout>

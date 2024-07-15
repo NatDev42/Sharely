@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "482750936460",
+    "project_id": "sharely-2b0e1",
+    "storage_bucket": "sharely-2b0e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482750936460:android:40cf87787f869985bad2a9",
+        "android_client_info": {
+          "package_name": "com.company.Sharely"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX5yrcDkJhi8vUQXyq5Grj1WUAMMWYXGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

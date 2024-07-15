@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:hint="Group Name"
+            android:id="@+id/groupNameTxt"/>
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_marginRight="20dp"
+            android:onClick="addGroup"
+            android:id="@+id/addGroupBtn"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Square Buttons -->
+        <View
+            android:id="@+id/square1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#FF5071"
+            android:layout_margin="5dp"/>
+
+        <View
+            android:id="@+id/square2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#F78C00"
+            android:layout_margin="5dp"/>
+
+        <View
+            android:id="@+id/square3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#FED401"
+            android:layout_margin="5dp"/>
+
+        <View
+            android:id="@+id/square4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#4AD351"
+            android:layout_margin="5dp"/>
+
+        <View
+            android:id="@+id/square5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#05ADD2"
+            android:layout_margin="5dp"/>
+
+        <View
+            android:id="@+id/square6"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#1D73BC"
+            android:layout_margin="5dp"/>
+
+        <View
+            android:id="@+id/square7"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#AF4BDF"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+</LinearLayout>

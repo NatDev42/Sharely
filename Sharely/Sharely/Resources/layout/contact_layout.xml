@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0fff4">
+
+
+    <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginTop="90dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:text="Tell Us What You Think"/>
+
+    <Button
+        android:id="@+id/dialBtn"
+        android:text="dial"
+        android:layout_marginTop="50dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#CFECC9"/>
+
+    <Button
+        android:id="@+id/smsBtn"
+        android:text="sms"
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#A7DDA4"/>
+
+    <Button
+        android:id="@+id/emailBtn"
+        android:text="email"
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#73BF74"/>
+</LinearLayout>

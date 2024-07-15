@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="165dp"
+    android:layout_height="95dp"
+    android:gravity="center"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+    <ImageButton
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:padding="3dip"
+        android:id="@+id/groupBtnBackground"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/groupbtntxt"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

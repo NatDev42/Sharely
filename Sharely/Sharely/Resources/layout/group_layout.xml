@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+>
+    <ImageButton
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/dot3"
+        android:layout_alignParentRight="true"
+        android:id="@+id/options_btn"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/sharelycompact"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Borrow From Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BORROW NOW FROM"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"/>
+        <View
+            android:layout_width="210dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginStart="10dp"
+            android:background="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MOISHIKE'S CROCS"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:textColor="#32CD32"
+            android:id="@+id/groupName"/>
+
+        <!-- Group ID -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Group ID: "
+                android:textSize="14dp"
+                android:layout_below="@id/groupName"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1111111"
+                android:textSize="14dp"
+                android:layout_below="@id/groupName"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:id="@+id/groupIdTxt"/>
+        </LinearLayout>
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/categorySpinner"/>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:rowCount="1"
+            android:columnCount="2"
+            android:layout_gravity="center"
+            android:id="@+id/gridLayout">
+            <ListView
+                android:layout_margin="20dp"
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:id="@+id/LvLeft"/>
+            <ListView
+                android:layout_margin="20dp"
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:id="@+id/LvRight"/>
+        </GridLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addItemBtn"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#2372b4"
+        android:text="Add Item"/>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+    android:id="@+id/rename"
+    android:title="Edit Group"/>
+  <item
+ android:id="@+id/deleteGroup"
+ android:title="Delete Group"/>
+<item
+  android:id="@+id/manageMembers"
+  android:title="Manage Members"/>
+</menu>
